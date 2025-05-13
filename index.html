@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Alwiya Saju </h2>
+
+<p>JavaScript if else example</p>
+
+<p id="entered_text"></p>
+<p id="demo"></p>
+
+<script>
+const x = parseInt(prompt("Please enter Value of X(INT only):"));
+const y = parseInt(prompt("Please enter Value of Y(INT only):"));
+
+document.getElementById("entered_text").innerHTML = "Entered value X = " + x + ", Y = " + y;
+
+for (let i = 1; i <= 10; i++) {
+  document.write(x + " * " + i + " = " + (x * i) + "<br>");
+}
+
+for (let i = 1; i <= 10; i++) {
+  document.write(y + " * " + i + " = " + (y * i) + "<br>");
+}
+
+let text;
+if (x > y) {
+  text = "X is greater than Y";
+} else if (x < y) {
+  text = "X is less than Y";
+} else {
+  text = "X and Y are equal";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
